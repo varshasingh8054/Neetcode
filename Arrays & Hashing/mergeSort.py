@@ -1,5 +1,5 @@
 class Solution:
-    def sortArray(self, nums: List[int]) -> List[int]:
+    def sortArray(self, nums: list[int]) -> list[int]:
         def mergeSort(arr):
             if len(arr) > 1:
         
@@ -46,3 +46,6 @@ class Solution:
                 return nums
 
         return mergeSort(nums)
+    
+sol = Solution()
+print(sol.sortArray([3,1,6,5]))
